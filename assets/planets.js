@@ -1,182 +1,169 @@
 "use strict"
-define("planets/adapters/-json-api",["exports","@ember-data/adapter/json-api"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return t.default}})})),define("planets/app",["exports","ember-resolver","ember-load-initializers","planets/config/environment","single-spa-ember"],(function(e,t,n,r,o){function i(e){return(i="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function a(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function u(e,t){return(u=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}function l(e){var t=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1
+define("planets/app",["exports","ember-resolver","ember-load-initializers","planets/config/environment","single-spa-ember"],(function(t,e,n,r,o){function i(t){return(i="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function u(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function a(t,e){return(a=Object.setPrototypeOf||function(t,e){return t.__proto__=e,t})(t,e)}function l(t){var e=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1
 if(Reflect.construct.sham)return!1
 if("function"==typeof Proxy)return!0
-try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(e){return!1}}()
-return function(){var n,r=p(e)
-if(t){var o=p(this).constructor
+try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(t){return!1}}()
+return function(){var n,r=p(t)
+if(e){var o=p(this).constructor
 n=Reflect.construct(r,arguments,o)}else n=r.apply(this,arguments)
-return f(this,n)}}function f(e,t){return!t||"object"!==i(t)&&"function"!=typeof t?c(e):t}function c(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
-return e}function p(e){return(p=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}function s(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}Object.defineProperty(e,"__esModule",{value:!0}),e.unmount=e.mount=e.bootstrap=e.default=void 0
-var d=function(e){(function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function")
-e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&u(e,t)})(o,Ember.Application)
+return c(this,n)}}function c(t,e){return!e||"object"!==i(e)&&"function"!=typeof e?f(t):e}function f(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
+return t}function p(t){return(p=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}function s(t,e,n){return e in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}Object.defineProperty(t,"__esModule",{value:!0}),t.unmount=t.mount=t.bootstrap=t.default=void 0
+var y=function(t){(function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function")
+t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),e&&a(t,e)})(o,Ember.Application)
 var n=l(o)
-function o(){var e
-a(this,o)
-for(var i=arguments.length,u=new Array(i),l=0;l<i;l++)u[l]=arguments[l]
-return s(c(e=n.call.apply(n,[this].concat(u))),"modulePrefix",r.default.modulePrefix),s(c(e),"podModulePrefix",r.default.podModulePrefix),s(c(e),"Resolver",t.default),e}return o}()
-e.default=d,(0,n.default)(d,r.default.modulePrefix)
-var b=(0,o.default)({App:d,appName:"planets",createOpts:{rootElement:"#planets"}}),y=b.bootstrap
-e.bootstrap=y
+function o(){var t
+u(this,o)
+for(var i=arguments.length,a=new Array(i),l=0;l<i;l++)a[l]=arguments[l]
+return s(f(t=n.call.apply(n,[this].concat(a))),"modulePrefix",r.default.modulePrefix),s(f(t),"podModulePrefix",r.default.podModulePrefix),s(f(t),"Resolver",e.default),t}return o}()
+t.default=y,(0,n.default)(y,r.default.modulePrefix)
+var b=(0,o.default)({App:y,appName:"planets",createOpts:{rootElement:"#planets"}}),d=b.bootstrap
+t.bootstrap=d
 var m=b.mount
-e.mount=m
+t.mount=m
 var v=b.unmount
-e.unmount=v})),define("planets/component-managers/glimmer",["exports","@glimmer/component/-private/ember-component-manager"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return t.default}})})),define("planets/components/planet-list",["exports","@glimmer/component"],(function(e,t){function n(e){return(n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function r(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function o(e,t){for(var n=0;n<t.length;n++){var r=t[n]
-r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function i(e,t){return(i=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}function a(e){var t=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1
+t.unmount=v})),define("planets/component-managers/glimmer",["exports","@glimmer/component/-private/ember-component-manager"],(function(t,e){Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"default",{enumerable:!0,get:function(){return e.default}})})),define("planets/components/planet-list",["exports","@glimmer/component"],(function(t,e){function n(t){return(n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function r(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function o(t,e){for(var n=0;n<e.length;n++){var r=e[n]
+r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}function i(t,e){return(i=Object.setPrototypeOf||function(t,e){return t.__proto__=e,t})(t,e)}function u(t){var e=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1
 if(Reflect.construct.sham)return!1
 if("function"==typeof Proxy)return!0
-try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(e){return!1}}()
-return function(){var n,r=l(e)
-if(t){var o=l(this).constructor
+try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(t){return!1}}()
+return function(){var n,r=l(t)
+if(e){var o=l(this).constructor
 n=Reflect.construct(r,arguments,o)}else n=r.apply(this,arguments)
-return u(this,n)}}function u(e,t){return!t||"object"!==n(t)&&"function"!=typeof t?function(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
-return e}(e):t}function l(e){return(l=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-var f=Ember.HTMLBars.template({id:"HMKcTqI6",block:'{"symbols":["planet","@planets"],"statements":[[10,"div"],[14,0,"planetList"],[12],[2,"\\n"],[6,[37,3],[[30,[36,2],[[30,[36,2],[[32,2]],null]],null]],null,[["default"],[{"statements":[[2,"    "],[1,[30,[36,0],[[32,1]],null]],[2,"\\n  "],[8,"link-to",[[24,0,"h-12 flex items-center border-white border-b cursor-pointer no-underline"]],[["@route","@query"],["index",[30,[36,1],null,[["id"],[[32,1,["id"]]]]]]],[["default"],[{"statements":[[2,"\\n    "],[1,[32,1,["name"]]],[2," \\n  "]],"parameters":[]}]]],[2,"\\n"]],"parameters":[1]}]]],[13],[2,"\\n"]],"hasEval":false,"upvars":["log","hash","-track-array","each"]}',meta:{moduleName:"planets/components/planet-list.hbs"}}),c=function(e){(function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function")
-e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&i(e,t)})(f,e)
-var t,n,u,l=a(f)
-function f(){return r(this,f),l.apply(this,arguments)}return t=f,(n=[{key:"planets",get:function(){return["Tatooine","Alderaan","Yavin IV","Hoth","Dagobah","Bespin","Endor","Naboo","Coruscant","Kamino"]}}])&&o(t.prototype,n),u&&o(t,u),f}(t.default)
-e.default=c,Ember._setComponentTemplate(f,c)})),define("planets/components/selected-planet",["exports","@glimmer/component"],(function(e,t){function n(e){return(n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function r(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function o(e,t){return(o=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}function i(e){var t=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1
+return a(this,n)}}function a(t,e){return!e||"object"!==n(e)&&"function"!=typeof e?function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
+return t}(t):e}function l(t){return(l=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0
+var c=Ember.HTMLBars.template({id:"9CHOqI8d",block:'{"symbols":["planet","@planets"],"statements":[[10,"div"],[14,0,"planetList"],[12],[2,"\\n"],[6,[37,2],[[30,[36,1],[[30,[36,1],[[32,2]],null]],null]],null,[["default"],[{"statements":[[2,"  "],[8,"link-to",[[24,0,"h-12 flex items-center border-white border-b cursor-pointer no-underline"]],[["@route","@query"],["index",[30,[36,0],null,[["id"],[[32,1,["id"]]]]]]],[["default"],[{"statements":[[2,"\\n    "],[1,[32,1,["name"]]],[2," \\n  "]],"parameters":[]}]]],[2,"\\n"]],"parameters":[1]}]]],[13],[2,"\\n"]],"hasEval":false,"upvars":["hash","-track-array","each"]}',meta:{moduleName:"planets/components/planet-list.hbs"}}),f=function(t){(function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function")
+t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),e&&i(t,e)})(c,t)
+var e,n,a,l=u(c)
+function c(){return r(this,c),l.apply(this,arguments)}return e=c,(n=[{key:"planets",get:function(){return["Tatooine","Alderaan","Yavin IV","Hoth","Dagobah","Bespin","Endor","Naboo","Coruscant","Kamino"]}}])&&o(e.prototype,n),a&&o(e,a),c}(e.default)
+t.default=f,Ember._setComponentTemplate(c,f)})),define("planets/components/selected-planet",["exports","@glimmer/component"],(function(t,e){function n(t){return(n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function r(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function o(t,e){return(o=Object.setPrototypeOf||function(t,e){return t.__proto__=e,t})(t,e)}function i(t){var e=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1
 if(Reflect.construct.sham)return!1
 if("function"==typeof Proxy)return!0
-try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(e){return!1}}()
-return function(){var n,r=u(e)
-if(t){var o=u(this).constructor
+try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(t){return!1}}()
+return function(){var n,r=a(t)
+if(e){var o=a(this).constructor
 n=Reflect.construct(r,arguments,o)}else n=r.apply(this,arguments)
-return a(this,n)}}function a(e,t){return!t||"object"!==n(t)&&"function"!=typeof t?function(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
-return e}(e):t}function u(e){return(u=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-var l=Ember.HTMLBars.template({id:"SYQIDR/l",block:'{"symbols":["@planet"],"statements":[[10,"h2"],[14,0,"text-2xl"],[12],[1,[32,1,["name"]]],[13],[2," \\n"],[10,"table"],[12],[2,"\\n  "],[10,"tr"],[12],[2,"\\n    "],[10,"td"],[12],[2,"\\n      Climate\\n    "],[13],[2," \\n    "],[10,"td"],[12],[1,[32,1,["climate"]]],[13],[2,"\\n  "],[13],[2,"\\n  "],[10,"tr"],[12],[2,"\\n  "],[10,"td"],[12],[2,"Diameter"],[13],[2,"\\n  "],[10,"td"],[12],[1,[32,1,["diameter"]]],[13],[2,"\\n  "],[13],[2,"\\n  "],[10,"tr"],[12],[2,"\\n  "],[10,"td"],[12],[2,"Gravity"],[13],[2,"\\n  "],[10,"td"],[12],[1,[32,1,["gravity"]]],[13],[2,"\\n  "],[13],[2,"\\n  "],[10,"tr"],[12],[2,"\\n  "],[10,"td"],[12],[2,"Terrain"],[13],[2,"\\n  "],[10,"td"],[12],[1,[32,1,["terrain"]]],[13],[2,"\\n  "],[13],[2,"\\n  "],[10,"tr"],[12],[2,"\\n  "],[10,"td"],[12],[2,"Population"],[13],[2,"\\n  "],[10,"td"],[12],[1,[32,1,["population"]]],[13],[2,"\\n  "],[13],[2,"\\n  "],[10,"tr"],[12],[2,"\\n  "],[10,"td"],[12],[2,"Notable People"],[13],[2,"\\n  "],[10,"td"],[12],[2,"\\n  Luke Skywalker\\n  C-3PO\\n  Darth Vader\\n  Owen Lars\\n  Beru Whitesun lars\\n  R5-D4\\n  Biggs Darklighter\\n  Luke Skywalker\\n  Darth Vader\\n  Owen Lars\\n    "],[13],[2,"\\n    "],[13],[2,"\\n    "],[10,"tr"],[12],[2,"\\n      "],[10,"td"],[12],[2,"Films\\n      "],[13],[2,"\\n    "],[13],[2,"\\n"],[13],[2,"\\n"]],"hasEval":false,"upvars":[]}',meta:{moduleName:"planets/components/selected-planet.hbs"}}),f=function(e){(function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function")
-e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&o(e,t)})(n,e)
-var t=i(n)
-function n(){return r(this,n),t.apply(this,arguments)}return n}(t.default)
-e.default=f,Ember._setComponentTemplate(l,f)})),define("planets/controllers/index",["exports"],(function(e){function t(e){return(t="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function n(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function r(e,t){return(r=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}function o(e){var t=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1
+return u(this,n)}}function u(t,e){return!e||"object"!==n(e)&&"function"!=typeof e?function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
+return t}(t):e}function a(t){return(a=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0
+var l=Ember.HTMLBars.template({id:"SYQIDR/l",block:'{"symbols":["@planet"],"statements":[[10,"h2"],[14,0,"text-2xl"],[12],[1,[32,1,["name"]]],[13],[2," \\n"],[10,"table"],[12],[2,"\\n  "],[10,"tr"],[12],[2,"\\n    "],[10,"td"],[12],[2,"\\n      Climate\\n    "],[13],[2," \\n    "],[10,"td"],[12],[1,[32,1,["climate"]]],[13],[2,"\\n  "],[13],[2,"\\n  "],[10,"tr"],[12],[2,"\\n  "],[10,"td"],[12],[2,"Diameter"],[13],[2,"\\n  "],[10,"td"],[12],[1,[32,1,["diameter"]]],[13],[2,"\\n  "],[13],[2,"\\n  "],[10,"tr"],[12],[2,"\\n  "],[10,"td"],[12],[2,"Gravity"],[13],[2,"\\n  "],[10,"td"],[12],[1,[32,1,["gravity"]]],[13],[2,"\\n  "],[13],[2,"\\n  "],[10,"tr"],[12],[2,"\\n  "],[10,"td"],[12],[2,"Terrain"],[13],[2,"\\n  "],[10,"td"],[12],[1,[32,1,["terrain"]]],[13],[2,"\\n  "],[13],[2,"\\n  "],[10,"tr"],[12],[2,"\\n  "],[10,"td"],[12],[2,"Population"],[13],[2,"\\n  "],[10,"td"],[12],[1,[32,1,["population"]]],[13],[2,"\\n  "],[13],[2,"\\n  "],[10,"tr"],[12],[2,"\\n  "],[10,"td"],[12],[2,"Notable People"],[13],[2,"\\n  "],[10,"td"],[12],[2,"\\n  Luke Skywalker\\n  C-3PO\\n  Darth Vader\\n  Owen Lars\\n  Beru Whitesun lars\\n  R5-D4\\n  Biggs Darklighter\\n  Luke Skywalker\\n  Darth Vader\\n  Owen Lars\\n    "],[13],[2,"\\n    "],[13],[2,"\\n    "],[10,"tr"],[12],[2,"\\n      "],[10,"td"],[12],[2,"Films\\n      "],[13],[2,"\\n    "],[13],[2,"\\n"],[13],[2,"\\n"]],"hasEval":false,"upvars":[]}',meta:{moduleName:"planets/components/selected-planet.hbs"}}),c=function(t){(function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function")
+t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),e&&o(t,e)})(n,t)
+var e=i(n)
+function n(){return r(this,n),e.apply(this,arguments)}return n}(e.default)
+t.default=c,Ember._setComponentTemplate(l,c)})),define("planets/controllers/index",["exports"],(function(t){function e(t){return(e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function n(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function r(t,e){return(r=Object.setPrototypeOf||function(t,e){return t.__proto__=e,t})(t,e)}function o(t){var e=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1
 if(Reflect.construct.sham)return!1
 if("function"==typeof Proxy)return!0
-try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(e){return!1}}()
-return function(){var n,r=a(e)
-if(t){var o=a(this).constructor
+try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(t){return!1}}()
+return function(){var n,r=u(t)
+if(e){var o=u(this).constructor
 n=Reflect.construct(r,arguments,o)}else n=r.apply(this,arguments)
-return i(this,n)}}function i(e,n){return!n||"object"!==t(n)&&"function"!=typeof n?function(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
-return e}(e):n}function a(e){return(a=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-var u=function(e){(function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function")
-e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&r(e,t)})(i,Ember.Controller)
-var t=o(i)
-function i(){return n(this,i),t.apply(this,arguments)}return i}()
-e.default=u})),define("planets/data-adapter",["exports","@ember-data/debug"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return t.default}})})),define("planets/helpers/app-version",["exports","planets/config/environment","ember-cli-app-version/utils/regexp"],(function(e,t,n){function r(e){var r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},o=t.default.APP.version,i=r.versionOnly||r.hideSha,a=r.shaOnly||r.hideVersion,u=null
-return i&&(r.showExtended&&(u=o.match(n.versionExtendedRegExp)),u||(u=o.match(n.versionRegExp))),a&&(u=o.match(n.shaRegExp)),u?u[0]:o}Object.defineProperty(e,"__esModule",{value:!0}),e.appVersion=r,e.default=void 0
+return i(this,n)}}function i(t,n){return!n||"object"!==e(n)&&"function"!=typeof n?function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
+return t}(t):n}function u(t){return(u=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0
+var a=function(t){(function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function")
+t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),e&&r(t,e)})(i,Ember.Controller)
+var e=o(i)
+function i(){return n(this,i),e.apply(this,arguments)}return i}()
+t.default=a})),define("planets/helpers/app-version",["exports","planets/config/environment","ember-cli-app-version/utils/regexp"],(function(t,e,n){function r(t){var r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},o=e.default.APP.version,i=r.versionOnly||r.hideSha,u=r.shaOnly||r.hideVersion,a=null
+return i&&(r.showExtended&&(a=o.match(n.versionExtendedRegExp)),a||(a=o.match(n.versionRegExp))),u&&(a=o.match(n.shaRegExp)),a?a[0]:o}Object.defineProperty(t,"__esModule",{value:!0}),t.appVersion=r,t.default=void 0
 var o=Ember.Helper.helper(r)
-e.default=o})),define("planets/helpers/pluralize",["exports","ember-inflector/lib/helpers/pluralize"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-var n=t.default
-e.default=n})),define("planets/helpers/singularize",["exports","ember-inflector/lib/helpers/singularize"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-var n=t.default
-e.default=n})),define("planets/initializers/app-version",["exports","ember-cli-app-version/initializer-factory","planets/config/environment"],(function(e,t,n){var r,o
-Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0,n.default.APP&&(r=n.default.APP.name,o=n.default.APP.version)
-var i={name:"App Version",initialize:(0,t.default)(r,o)}
-e.default=i})),define("planets/initializers/container-debug-adapter",["exports","ember-resolver/resolvers/classic/container-debug-adapter"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-var n={name:"container-debug-adapter",initialize:function(){var e=arguments[1]||arguments[0]
-e.register("container-debug-adapter:main",t.default),e.inject("container-debug-adapter:main","namespace","application:main")}}
-e.default=n})),define("planets/initializers/ember-data-data-adapter",["exports","@ember-data/debug/setup"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return t.default}})})),define("planets/initializers/ember-data",["exports","ember-data","ember-data/setup-container"],(function(e,t,n){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-var r={name:"ember-data",initialize:n.default}
-e.default=r})),define("planets/initializers/export-application-global",["exports","planets/config/environment"],(function(e,t){function n(){var e=arguments[1]||arguments[0]
-if(!1!==t.default.exportApplicationGlobal){var n
+t.default=o})),define("planets/initializers/app-version",["exports","ember-cli-app-version/initializer-factory","planets/config/environment"],(function(t,e,n){var r,o
+Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0,n.default.APP&&(r=n.default.APP.name,o=n.default.APP.version)
+var i={name:"App Version",initialize:(0,e.default)(r,o)}
+t.default=i})),define("planets/initializers/container-debug-adapter",["exports","ember-resolver/resolvers/classic/container-debug-adapter"],(function(t,e){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0
+var n={name:"container-debug-adapter",initialize:function(){var t=arguments[1]||arguments[0]
+t.register("container-debug-adapter:main",e.default),t.inject("container-debug-adapter:main","namespace","application:main")}}
+t.default=n})),define("planets/initializers/export-application-global",["exports","planets/config/environment"],(function(t,e){function n(){var t=arguments[1]||arguments[0]
+if(!1!==e.default.exportApplicationGlobal){var n
 if("undefined"!=typeof window)n=window
 else if("undefined"!=typeof global)n=global
 else{if("undefined"==typeof self)return
-n=self}var r,o=t.default.exportApplicationGlobal
-r="string"==typeof o?o:Ember.String.classify(t.default.modulePrefix),n[r]||(n[r]=e,e.reopen({willDestroy:function(){this._super.apply(this,arguments),delete n[r]}}))}}Object.defineProperty(e,"__esModule",{value:!0}),e.initialize=n,e.default=void 0
+n=self}var r,o=e.default.exportApplicationGlobal
+r="string"==typeof o?o:Ember.String.classify(e.default.modulePrefix),n[r]||(n[r]=t,t.reopen({willDestroy:function(){this._super.apply(this,arguments),delete n[r]}}))}}Object.defineProperty(t,"__esModule",{value:!0}),t.initialize=n,t.default=void 0
 var r={name:"export-application-global",initialize:n}
-e.default=r})),define("planets/instance-initializers/ember-data",["exports","ember-data/initialize-store-service"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-var n={name:"ember-data",initialize:t.default}
-e.default=n})),define("planets/models/planet",["exports","@ember-data/model"],(function(e,t){var n,r,o,i,a,u,l,f,c,p,s,d,b,y,m
-function v(e){return(v="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function h(e,t,n,r){n&&Object.defineProperty(e,t,{enumerable:n.enumerable,configurable:n.configurable,writable:n.writable,value:n.initializer?n.initializer.call(r):void 0})}function O(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _(e,t){return(_=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}function P(e){var t=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1
+t.default=r})),define("planets/models/planet",["exports","@ember-data/model"],(function(t,e){var n,r,o,i,u,a,l,c,f,p,s,y,b,d,m
+function v(t){return(v="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function h(t,e,n,r){n&&Object.defineProperty(t,e,{enumerable:n.enumerable,configurable:n.configurable,writable:n.writable,value:n.initializer?n.initializer.call(r):void 0})}function _(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function O(t,e){return(O=Object.setPrototypeOf||function(t,e){return t.__proto__=e,t})(t,e)}function w(t){var e=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1
 if(Reflect.construct.sham)return!1
 if("function"==typeof Proxy)return!0
-try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(e){return!1}}()
-return function(){var n,r=w(e)
-if(t){var o=w(this).constructor
+try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(t){return!1}}()
+return function(){var n,r=j(t)
+if(e){var o=j(this).constructor
 n=Reflect.construct(r,arguments,o)}else n=r.apply(this,arguments)
-return g(this,n)}}function g(e,t){return!t||"object"!==v(t)&&"function"!=typeof t?j(e):t}function j(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
-return e}function w(e){return(w=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}function x(e,t,n,r,o){var i={}
-return Object.keys(r).forEach((function(e){i[e]=r[e]})),i.enumerable=!!i.enumerable,i.configurable=!!i.configurable,("value"in i||i.initializer)&&(i.writable=!0),i=n.slice().reverse().reduce((function(n,r){return r(e,t,n)||n}),i),o&&void 0!==i.initializer&&(i.value=i.initializer?i.initializer.call(o):void 0,i.initializer=void 0),void 0===i.initializer&&(Object.defineProperty(e,t,i),i=null),i}Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-var R=(m=function(e){(function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function")
-e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&_(e,t)})(n,e)
-var t=P(n)
-function n(){var e
-O(this,n)
-for(var m=arguments.length,v=new Array(m),_=0;_<m;_++)v[_]=arguments[_]
-return h(j(e=t.call.apply(t,[this].concat(v))),"edited",r,j(e)),h(j(e),"climate",o,j(e)),h(j(e),"surface_water",i,j(e)),h(j(e),"name",a,j(e)),h(j(e),"diameter",u,j(e)),h(j(e),"rotation_period",l,j(e)),h(j(e),"created",f,j(e)),h(j(e),"terrain",c,j(e)),h(j(e),"gravity",p,j(e)),h(j(e),"orbital_period",s,j(e)),h(j(e),"population",d,j(e)),h(j(e),"films",b,j(e)),h(j(e),"residents",y,j(e)),e}return n}(t.default),r=x((n=m).prototype,"edited",[t.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),o=x(n.prototype,"climate",[t.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),i=x(n.prototype,"surface_water",[t.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),a=x(n.prototype,"name",[t.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),u=x(n.prototype,"diameter",[t.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),l=x(n.prototype,"rotation_period",[t.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),f=x(n.prototype,"created",[t.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),c=x(n.prototype,"terrain",[t.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),p=x(n.prototype,"gravity",[t.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),s=x(n.prototype,"orbital_period",[t.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),d=x(n.prototype,"population",[t.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),b=x(n.prototype,"films",[t.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),y=x(n.prototype,"residents",[t.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),n)
-e.default=R})),define("planets/router",["exports","planets/config/environment"],(function(e,t){function n(e){return(n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function r(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function o(e,t){return(o=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}function i(e){var t=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1
+return g(this,n)}}function g(t,e){return!e||"object"!==v(e)&&"function"!=typeof e?P(t):e}function P(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
+return t}function j(t){return(j=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}function R(t,e,n,r,o){var i={}
+return Object.keys(r).forEach((function(t){i[t]=r[t]})),i.enumerable=!!i.enumerable,i.configurable=!!i.configurable,("value"in i||i.initializer)&&(i.writable=!0),i=n.slice().reverse().reduce((function(n,r){return r(t,e,n)||n}),i),o&&void 0!==i.initializer&&(i.value=i.initializer?i.initializer.call(o):void 0,i.initializer=void 0),void 0===i.initializer&&(Object.defineProperty(t,e,i),i=null),i}Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0
+var S=(m=function(t){(function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function")
+t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),e&&O(t,e)})(n,t)
+var e=w(n)
+function n(){var t
+_(this,n)
+for(var m=arguments.length,v=new Array(m),O=0;O<m;O++)v[O]=arguments[O]
+return h(P(t=e.call.apply(e,[this].concat(v))),"edited",r,P(t)),h(P(t),"climate",o,P(t)),h(P(t),"surface_water",i,P(t)),h(P(t),"name",u,P(t)),h(P(t),"diameter",a,P(t)),h(P(t),"rotation_period",l,P(t)),h(P(t),"created",c,P(t)),h(P(t),"terrain",f,P(t)),h(P(t),"gravity",p,P(t)),h(P(t),"orbital_period",s,P(t)),h(P(t),"population",y,P(t)),h(P(t),"films",b,P(t)),h(P(t),"residents",d,P(t)),t}return n}(e.default),r=R((n=m).prototype,"edited",[e.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),o=R(n.prototype,"climate",[e.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),i=R(n.prototype,"surface_water",[e.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),u=R(n.prototype,"name",[e.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),a=R(n.prototype,"diameter",[e.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),l=R(n.prototype,"rotation_period",[e.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),c=R(n.prototype,"created",[e.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),f=R(n.prototype,"terrain",[e.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),p=R(n.prototype,"gravity",[e.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),s=R(n.prototype,"orbital_period",[e.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),y=R(n.prototype,"population",[e.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),b=R(n.prototype,"films",[e.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),d=R(n.prototype,"residents",[e.attr],{configurable:!0,enumerable:!0,writable:!0,initializer:null}),n)
+t.default=S})),define("planets/router",["exports","planets/config/environment"],(function(t,e){function n(t){return(n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function r(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function o(t,e){return(o=Object.setPrototypeOf||function(t,e){return t.__proto__=e,t})(t,e)}function i(t){var e=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1
 if(Reflect.construct.sham)return!1
 if("function"==typeof Proxy)return!0
-try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(e){return!1}}()
-return function(){var n,r=l(e)
-if(t){var o=l(this).constructor
+try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(t){return!1}}()
+return function(){var n,r=l(t)
+if(e){var o=l(this).constructor
 n=Reflect.construct(r,arguments,o)}else n=r.apply(this,arguments)
-return a(this,n)}}function a(e,t){return!t||"object"!==n(t)&&"function"!=typeof t?u(e):t}function u(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
-return e}function l(e){return(l=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}function f(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-var c=function(e){(function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function")
-e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&o(e,t)})(a,Ember.Router)
-var n=i(a)
-function a(){var e
-r(this,a)
+return u(this,n)}}function u(t,e){return!e||"object"!==n(e)&&"function"!=typeof e?a(t):e}function a(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
+return t}function l(t){return(l=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}function c(t,e,n){return e in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0
+var f=function(t){(function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function")
+t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),e&&o(t,e)})(u,Ember.Router)
+var n=i(u)
+function u(){var t
+r(this,u)
 for(var o=arguments.length,i=new Array(o),l=0;l<o;l++)i[l]=arguments[l]
-return f(u(e=n.call.apply(n,[this].concat(i))),"location",t.default.locationType),f(u(e),"rootURL",t.default.rootURL),e}return a}()
-e.default=c,c.map((function(){}))})),define("planets/routes/application",["exports"],(function(e){function t(e){return(t="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function n(e,t){var n=Object.keys(e)
-if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e)
-t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}function r(e){for(var t=1;t<arguments.length;t++){var r=null!=arguments[t]?arguments[t]:{}
-t%2?n(Object(r),!0).forEach((function(t){o(e,t,r[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(r)):n(Object(r)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(r,t))}))}return e}function o(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function i(e,t,n,r,o,i,a){try{var u=e[i](a),l=u.value}catch(f){return void n(f)}u.done?t(l):Promise.resolve(l).then(r,o)}function a(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function u(e,t){for(var n=0;n<t.length;n++){var r=t[n]
-r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function l(e,t){return(l=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}function f(e){var t=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1
+return c(a(t=n.call.apply(n,[this].concat(i))),"location",e.default.locationType),c(a(t),"rootURL",e.default.rootURL),t}return u}()
+t.default=f,f.map((function(){}))})),define("planets/routes/application",["exports"],(function(t){function e(t){return(e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function n(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function r(t,e){return(r=Object.setPrototypeOf||function(t,e){return t.__proto__=e,t})(t,e)}function o(t){var e=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1
 if(Reflect.construct.sham)return!1
 if("function"==typeof Proxy)return!0
-try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(e){return!1}}()
-return function(){var n,r=p(e)
-if(t){var o=p(this).constructor
+try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(t){return!1}}()
+return function(){var n,r=u(t)
+if(e){var o=u(this).constructor
 n=Reflect.construct(r,arguments,o)}else n=r.apply(this,arguments)
-return c(this,n)}}function c(e,n){return!n||"object"!==t(n)&&"function"!=typeof n?function(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
-return e}(e):n}function p(e){return(p=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-var s=function(e){(function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function")
-e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&l(e,t)})(d,Ember.Route)
-var t,n,o,c,p,s=f(d)
-function d(){return a(this,d),s.apply(this,arguments)}return t=d,(n=[{key:"model",value:(c=regeneratorRuntime.mark((function e(){var t,n,o
-return regeneratorRuntime.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=2,fetch("https://swapi.dev/api/planets/")
-case 2:return t=e.sent,e.next=5,t.json()
-case 5:n=e.sent,o=n.results.map((function(e,t){return{id:++t,type:"planet",attributes:r({},e)}})),this.store.push({data:o})
-case 8:case"end":return e.stop()}}),e,this)})),p=function(){var e=this,t=arguments
-return new Promise((function(n,r){var o=c.apply(e,t)
-function a(e){i(o,n,r,a,u,"next",e)}function u(e){i(o,n,r,a,u,"throw",e)}a(void 0)}))},function(){return p.apply(this,arguments)})}])&&u(t.prototype,n),o&&u(t,o),d}()
-e.default=s})),define("planets/routes/index",["exports"],(function(e){function t(e){return(t="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function n(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function r(e,t){for(var n=0;n<t.length;n++){var r=t[n]
-r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function o(e,t){return(o=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}function i(e){var t=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1
+return i(this,n)}}function i(t,n){return!n||"object"!==e(n)&&"function"!=typeof n?function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
+return t}(t):n}function u(t){return(u=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0
+var a=function(t){(function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function")
+t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),e&&r(t,e)})(i,Ember.Route)
+var e=o(i)
+function i(){return n(this,i),e.apply(this,arguments)}return i}()
+t.default=a})),define("planets/routes/index",["exports"],(function(t){function e(t){return(e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function n(t,e,n,r,o,i,u){try{var a=t[i](u),l=a.value}catch(c){return void n(c)}a.done?e(l):Promise.resolve(l).then(r,o)}function r(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function o(t,e){for(var n=0;n<e.length;n++){var r=e[n]
+r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}function i(t,e){return(i=Object.setPrototypeOf||function(t,e){return t.__proto__=e,t})(t,e)}function u(t){var e=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1
 if(Reflect.construct.sham)return!1
 if("function"==typeof Proxy)return!0
-try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(e){return!1}}()
-return function(){var n,r=l(e)
-if(t){var o=l(this).constructor
+try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(t){return!1}}()
+return function(){var n,r=c(t)
+if(e){var o=c(this).constructor
 n=Reflect.construct(r,arguments,o)}else n=r.apply(this,arguments)
-return a(this,n)}}function a(e,n){return!n||"object"!==t(n)&&"function"!=typeof n?u(e):n}function u(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
-return e}function l(e){return(l=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}function f(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-var c=function(e){(function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function")
-e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&o(e,t)})(p,Ember.Route)
-var t,a,l,c=i(p)
-function p(){var e
-n(this,p)
-for(var t=arguments.length,r=new Array(t),o=0;o<t;o++)r[o]=arguments[o]
-return f(u(e=c.call.apply(c,[this].concat(r))),"queryParams",{id:{refreshModel:!0}}),e}return t=p,(a=[{key:"model",value:function(e){return{planet:this.store.peekRecord("planet",e.id||0),planets:this.store.peekAll("planet")}}}])&&r(t.prototype,a),l&&r(t,l),p}()
-e.default=c})),define("planets/serializers/-default",["exports","@ember-data/serializer/json"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return t.default}})})),define("planets/serializers/-json-api",["exports","@ember-data/serializer/json-api"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return t.default}})})),define("planets/serializers/-rest",["exports","@ember-data/serializer/rest"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return t.default}})})),define("planets/serializers/planet",["exports","@ember-data/serializer/json-api"],(function(e,t){function n(e){return(n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function r(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function o(e,t){return(o=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}function i(e){var t=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1
+return a(this,n)}}function a(t,n){return!n||"object"!==e(n)&&"function"!=typeof n?l(t):n}function l(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
+return t}function c(t){return(c=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}function f(t,e,n){return e in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0
+var p=function(t){(function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function")
+t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),e&&i(t,e)})(b,Ember.Route)
+var e,a,c,p,s,y=u(b)
+function b(){var t
+r(this,b)
+for(var e=arguments.length,n=new Array(e),o=0;o<e;o++)n[o]=arguments[o]
+return f(l(t=y.call.apply(y,[this].concat(n))),"queryParams",{id:{refreshModel:!0}}),t}return e=b,(a=[{key:"model",value:(p=regeneratorRuntime.mark((function t(e){var n,r,o,i
+return regeneratorRuntime.wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,fetch("https://swapi.dev/api/planets/")
+case 2:return n=t.sent,t.next=5,n.json()
+case 5:return(r=t.sent).results.forEach((function(t,e){return t.id=++e})),o=r.results,i=o.find((function(t){return e.id==t.id})),t.abrupt("return",{planet:i,planets:o})
+case 10:case"end":return t.stop()}}),t)})),s=function(){var t=this,e=arguments
+return new Promise((function(r,o){var i=p.apply(t,e)
+function u(t){n(i,r,o,u,a,"next",t)}function a(t){n(i,r,o,u,a,"throw",t)}u(void 0)}))},function(t){return s.apply(this,arguments)})}])&&o(e.prototype,a),c&&o(e,c),b}()
+t.default=p})),define("planets/serializers/planet",["exports","@ember-data/serializer/json-api"],(function(t,e){function n(t){return(n="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function r(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function o(t,e){return(o=Object.setPrototypeOf||function(t,e){return t.__proto__=e,t})(t,e)}function i(t){var e=function(){if("undefined"==typeof Reflect||!Reflect.construct)return!1
 if(Reflect.construct.sham)return!1
 if("function"==typeof Proxy)return!0
-try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(e){return!1}}()
-return function(){var n,r=u(e)
-if(t){var o=u(this).constructor
+try{return Date.prototype.toString.call(Reflect.construct(Date,[],(function(){}))),!0}catch(t){return!1}}()
+return function(){var n,r=a(t)
+if(e){var o=a(this).constructor
 n=Reflect.construct(r,arguments,o)}else n=r.apply(this,arguments)
-return a(this,n)}}function a(e,t){return!t||"object"!==n(t)&&"function"!=typeof t?function(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
-return e}(e):t}function u(e){return(u=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-var l=function(e){(function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function")
-e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&o(e,t)})(n,e)
-var t=i(n)
-function n(){return r(this,n),t.apply(this,arguments)}return n}(t.default)
-e.default=l})),define("planets/services/store",["exports","ember-data/store"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return t.default}})})),define("planets/templates/application",["exports"],(function(e){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-var t=Ember.HTMLBars.template({id:"4M4ocO0d",block:'{"symbols":[],"statements":[[1,[30,[36,1],[[30,[36,0],null,null]],null]],[2,"\\n"]],"hasEval":false,"upvars":["-outlet","component"]}',meta:{moduleName:"planets/templates/application.hbs"}})
-e.default=t})),define("planets/templates/index",["exports"],(function(e){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-var t=Ember.HTMLBars.template({id:"i6Uycucw",block:'{"symbols":["@model"],"statements":[[10,"div"],[12],[2,"\\n  "],[10,"div"],[14,0,"flex"],[12],[2,"\\n    "],[10,"div"],[14,0,"p-6 w-1/3"],[12],[2,"\\n"],[6,[37,1],[[32,0,["nextPage"]]],null,[["default"],[{"statements":[[2,"        "],[8,"button",[[16,"disabled",[32,0,["disabled"]]],[16,"loading",[32,0,["loading"]]],[4,[38,0],["click",[32,0,["fetchPlanets"]]],null]],[[],[]],[["default"],[{"statements":[[2,"\\n          Fetch More Planets\\n        "]],"parameters":[]}]]],[2,"\\n"]],"parameters":[]}]]],[2,"        "],[8,"planet-list",[],[["@planets"],[[32,1,["planets"]]]],null],[2,"\\n    "],[13],[2,"\\n    "],[10,"div"],[14,0,"w-2/3 p-6 border-l-2 border-white"],[12],[2,"\\n      "],[10,"div"],[14,0,"selectedPlanet"],[12],[2,"\\n        "],[8,"selected-planet",[],[["@planet"],[[32,1,["planet"]]]],null],[2,"\\n      "],[13],[2,"\\n    "],[13],[2,"\\n  "],[13],[2,"\\n"],[13],[2,"\\n"]],"hasEval":false,"upvars":["on","if"]}',meta:{moduleName:"planets/templates/index.hbs"}})
-e.default=t})),define("planets/transforms/boolean",["exports","@ember-data/serializer/-private"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return t.BooleanTransform}})})),define("planets/transforms/date",["exports","@ember-data/serializer/-private"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return t.DateTransform}})})),define("planets/transforms/number",["exports","@ember-data/serializer/-private"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return t.NumberTransform}})}))
-define("planets/transforms/string",["exports","@ember-data/serializer/-private"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return t.StringTransform}})})),define("planets/config/environment",[],(function(){var e={default:{modulePrefix:"planets",environment:"production",rootURL:"/root-config/planets/",locationType:"hash",EmberENV:{FEATURES:{},EXTEND_PROTOTYPES:{Date:!1},_APPLICATION_TEMPLATE_WRAPPER:!1,_DEFAULT_ASYNC_OBSERVERS:!0,_JQUERY_INTEGRATION:!1,_TEMPLATE_ONLY_GLIMMER_COMPONENTS:!0},APP:{name:"planets",version:"0.0.0+2648515c"},exportApplicationGlobal:!1}}
-return Object.defineProperty(e,"__esModule",{value:!0}),e}))
+return u(this,n)}}function u(t,e){return!e||"object"!==n(e)&&"function"!=typeof e?function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called")
+return t}(t):e}function a(t){return(a=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0
+var l=function(t){(function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function")
+t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),e&&o(t,e)})(n,t)
+var e=i(n)
+function n(){return r(this,n),e.apply(this,arguments)}return n}(e.default)
+t.default=l})),define("planets/templates/application",["exports"],(function(t){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0
+var e=Ember.HTMLBars.template({id:"4M4ocO0d",block:'{"symbols":[],"statements":[[1,[30,[36,1],[[30,[36,0],null,null]],null]],[2,"\\n"]],"hasEval":false,"upvars":["-outlet","component"]}',meta:{moduleName:"planets/templates/application.hbs"}})
+t.default=e})),define("planets/templates/index",["exports"],(function(t){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0
+var e=Ember.HTMLBars.template({id:"i6Uycucw",block:'{"symbols":["@model"],"statements":[[10,"div"],[12],[2,"\\n  "],[10,"div"],[14,0,"flex"],[12],[2,"\\n    "],[10,"div"],[14,0,"p-6 w-1/3"],[12],[2,"\\n"],[6,[37,1],[[32,0,["nextPage"]]],null,[["default"],[{"statements":[[2,"        "],[8,"button",[[16,"disabled",[32,0,["disabled"]]],[16,"loading",[32,0,["loading"]]],[4,[38,0],["click",[32,0,["fetchPlanets"]]],null]],[[],[]],[["default"],[{"statements":[[2,"\\n          Fetch More Planets\\n        "]],"parameters":[]}]]],[2,"\\n"]],"parameters":[]}]]],[2,"        "],[8,"planet-list",[],[["@planets"],[[32,1,["planets"]]]],null],[2,"\\n    "],[13],[2,"\\n    "],[10,"div"],[14,0,"w-2/3 p-6 border-l-2 border-white"],[12],[2,"\\n      "],[10,"div"],[14,0,"selectedPlanet"],[12],[2,"\\n        "],[8,"selected-planet",[],[["@planet"],[[32,1,["planet"]]]],null],[2,"\\n      "],[13],[2,"\\n    "],[13],[2,"\\n  "],[13],[2,"\\n"],[13],[2,"\\n"]],"hasEval":false,"upvars":["on","if"]}',meta:{moduleName:"planets/templates/index.hbs"}})
+t.default=e})),define("planets/config/environment",[],(function(){var t={default:{modulePrefix:"planets",environment:"production",rootURL:"/planets/",locationType:"hash",EmberENV:{FEATURES:{},EXTEND_PROTOTYPES:{Date:!1},_APPLICATION_TEMPLATE_WRAPPER:!1,_DEFAULT_ASYNC_OBSERVERS:!0,_JQUERY_INTEGRATION:!1,_TEMPLATE_ONLY_GLIMMER_COMPONENTS:!0},APP:{name:"planets",version:"0.0.0+2648515c"},exportApplicationGlobal:!1}}
+return Object.defineProperty(t,"__esModule",{value:!0}),t}))
