@@ -23,4 +23,27 @@ const emberLifecycles = singleSpaEmber({
 
 export const bootstrap = emberLifecycles.bootstrap;
 export const mount = emberLifecycles.mount;
+/*
+export const mount = () => {
+
+    //const appName = "planets";
+    //const appUrl = "http://localhost:4202/planets/assets/planets.js";
+    //const vendorUrl = "http://localhost:4202/planets/assets/vendor.js";
+    //singleSpaEmber.loadEmberApp(appName, appUrl, vendorUrl);
+  return emberLifecycles.mount().then(() => {
+  });
+}
+*/
 export const unmount = emberLifecycles.unmount;
+/*
+export const unmount = () => {
+
+  return emberLifecycles.unmount().then(() => {
+
+  const app = Array.from(document.querySelectorAll('script')).filter(s => s.src.endsWith('/planets/assets/planets.js'))
+  document.head.removeChild(app[0]);
+  const vendor = Array.from(document.querySelectorAll('script')).filter(s => s.src.endsWith('/planets/assets/vendor.js'))
+  document.head.removeChild(vendor[0]);
+  });
+}
+*/
