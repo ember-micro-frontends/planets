@@ -1,6 +1,6 @@
 <div class="planetList">
   {{#each @planets as |planet|}}
-  <LinkTo @route="index" @query={{hash id=planet.id}} class="h-12 flex items-center border-white border-b cursor-pointer no-underline">
+  <LinkTo @route="index.show" @model={{planet.id}} class="h-12 flex items-center border-white border-b cursor-pointer no-underline">
     {{planet.name}} 
   </LinkTo>
   {{/each}}
